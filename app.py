@@ -9,13 +9,21 @@ def index():
 def about():
     return render_template("about.html")
 
-@app.route('/admin')
-def admin():
-    return render_template("admin.html")
+@app.route('/artists')
+def artists():
+    return render_template("artists.html")
 
-@app.route('/ticket')
-def ticket():
-    return render_template("ticket.html")
+@app.route('/pricing')
+def pricing():
+    return render_template("pricing.html")
+
+@app.route('/contact')
+def contact():
+    return render_template("contact.html")
+
+@app.route('/buyticket')
+def buyticket():
+    return render_template("buyticket.html")
 
 
 
