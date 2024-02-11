@@ -13,6 +13,10 @@ def about():
 def admin():
     return render_template("admin.html")
 
+@app.route('/ticket')
+def ticket():
+    return render_template("ticket.html")
+
 
 
 if __name__ == "__main__":
